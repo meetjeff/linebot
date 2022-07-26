@@ -5,8 +5,12 @@ from linebot import LineBotApi
 from linebot.models import TextSendMessage
 import netifaces as ni
 import subprocess
+import os
+from dotenv import load_dotenv
 
-CHANNEL_ACCESS_TOKEN = "GQqR+YSGVHlUSrZcZtZeWGZJus7EZayo7qEZXvjHt6AbcSrsEPTvetC1q2Ssw4AQAyHyZuTC6OFiFSLA7hs+aY93RmX3QpSvzxHBJP1cg6stvTVs3qd7xToKjBQaZgTim41s62fpgm32sWv4dMTW6wdB04t89/1O/w1cDnyilFU="
+load_dotenv()
+
+CHANNEL_ACCESS_TOKEN = os.getenv("TOKEN")
 
 #netifaces.interfaces()
 #netifaces.gateways()
